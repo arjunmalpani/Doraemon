@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css"><link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+  <div class="home-page">
+    <!-- <input type="checkbox"  id="chk" > -->
+    <header>
+      <div class="logo">
+        DORA.com
+      </div>
+      <nav class="nav">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Service</a></li>
+          <li><a href="#">FAQs</a></li>
+          <li><a href="#">Contact-Us</a></li>
+        </ul>
+      </nav>
+      
+        <i class='bx bx-menu-alt-right' id="menu"></i>
+        <!-- <i class='bx bx-x' id="menu-close"></i> -->
+    </header>
+    <div class="content">
+      <div class="left-part">
+        <h1>Doraemon is here!</h1>
+        <button id="btn" onclick="scrollToSection('page2')"  >View More  <i class='bx bxs-down-arrow'></i></button>
+      </div>
+      <div class="right-part">
+        <div class="img-box">
+          <img src="./dora-img.jpg" alt="Doraemon Image">
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- Page 2 start -->
+  <div id="page2">
+    <h1  onclick="scrollToSection('page3')">Hi Doraemon Lover ! <3 </h1>
+  </div>
+  <!-- Page 3 Start -->
+  <div id="page3" style="
+    height: 100vh;
+    /* background: #8a808061; */
+  ">  
+
+  </div>
+  <script>
+    function scrollToSection(sectionId) {
+  var section = document.getElementById(sectionId);
+  if (section) {
+    section.scrollIntoView({ behavior: 'smooth' });
+  }
+}
+
+  </script>
+</body>
+</html>

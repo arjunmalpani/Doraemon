@@ -1,0 +1,215 @@
+@font-face {
+    font-family: 'Jazzy';
+    src: url('./JazzyCroquette Bold.otf') format('opentype');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Jazzy';
+}
+html,body{
+    height: 100%;
+    width: 100%;
+
+}
+body{
+    background: #8F98DE;
+}
+.home-page{
+    height: 100vh;
+    width: 100%;
+    border-bottom:3px solid #fff ;
+}
+.home-page header{
+    height: 150px;
+    /* background: #3e3ed317; */
+    padding: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+header .logo{
+    font-size: 3rem;
+    color: #fff;
+    cursor: pointer;
+}
+header .nav{
+    /* min-width: 400px; */
+    /* max-width: 50vw; */
+    width: 50%;
+}
+.nav ul{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    list-style: none;
+    color: #fff;
+}
+.nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    transition:color .3s ease-in-out ;
+}
+.nav ul li a:hover{
+    color: #4B4B8A;
+    
+}
+#menu{
+    font-size: 2.5rem;
+    color: #fff;
+    position: absolute;
+    right: 40px;
+    top: 50%;
+    transform: translate(0, -50%);
+    display: none;
+}
+@media (max-width:840px){
+    .home-page header{
+        padding: 1rem;
+    }
+    .nav{
+        display: none;
+    }
+}
+.home-page .content{
+    height: calc(100% - 150px);
+    width: 100%;
+    /* background: #0000006b; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3rem;
+    gap: 20px;
+}
+.content .left-part{
+    height: 80%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    h1{
+        font-size: 5rem;
+        color: white;
+        text-transform: uppercase;
+        letter-spacing: 1.1rem;
+    }
+    #btn{
+        max-width: 170px;
+        background: #7D74DA;
+        border: none;
+        font-size: 1.3rem;
+        color: #fff;
+        padding: 20px 10px;
+        border-radius: 20px;
+        border: 5px solid white;
+        cursor: pointer;
+        display: flex   ;
+        justify-content: center;
+        align-items: center;
+    }
+}
+.content .right-part{
+    width: 50%;
+    height: 80%;
+}
+.right-part .img-box{
+    height: 100%    ;
+    width: 100% ;
+    /* background: #bfa8a8; */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    img{
+        height: 100%;
+        aspect-ratio: 1/1;
+        border-radius: 47%;
+    }
+}
+
+@media (max-width:1390px){
+    .content .left-part h1{
+        font-size: 4rem;
+    }
+}
+@media (max-width:960px){
+    .home-page header{
+        /* margin-right: 30px; */
+        padding: 1rem;
+    }
+    .nav{
+        display: none;
+    }
+    .home-page .content{
+        padding: 1rem;
+        flex-direction: c;
+    }
+    #menu{
+        display: block;
+    }
+    
+}
+@media (max-width:860px){
+    .home-page .content{
+        width: 100%;
+        flex-direction: column-reverse;
+        padding-top: 50px;
+        justify-content: center;
+        align-items: center;
+        gap: 0;
+    }
+    .content .right-part{
+        width: auto;
+    }
+    .right-part .img-box{
+        justify-content: center;
+        max-height: 40vh;
+        
+    }
+    .content .left-part{
+        text-align: center;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .content .left-part h1{
+        font-size: 3rem;
+        /* padding: 0  ; */
+        margin-right: -18px;
+    }
+    .content .left-part #btn{
+        padding: 10px 15px;
+        /* margin-top: 10px; */
+        /* justify-content: space-a; */
+        gap: 5px;
+    }
+}
+
+
+/* Page 2 Start */
+
+#page2{
+    /* border-top:3px solid #fff ; */
+    border-bottom:3px solid #fff ;
+    height: 100vh;
+    width: 100%;
+    /* background: #00000012; */
+    color: #fff;
+    position: relative;text-align: center;
+
+}
+
+#page3{
+    /* border-top:3px solid #fff ; */
+    border-bottom:3px solid #fff ;
+
+    height: 100vh;
+    width: 100%;
+    /* background: #00000012; */
+    color: #fff;
+    position: relative;text-align: center;
+
+}
