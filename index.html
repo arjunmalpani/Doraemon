@@ -17,9 +17,13 @@
       <nav class="nav">
         <ul>
           <li><a href="#">Home</a></li>
-          <li><a href="#">Characters</a></li>
+          <li><a href="#" onclick="scrollToSection('page2')"  >Characters</a></li>
           <li><a href="#">FAQs</a></li>
-          <li><a href="#">Contact-Us</a></li>
+          <li><a href="https://wa.me/917701935880?text=Wow!+I+checked+your+webpage!"
+            style="display: flex;
+            align-items: center;"
+            onmouseover="this.style.color='#25D366'"
+            onmouseout="this.style.color=''"><i class='bx bxl-whatsapp'></i>Whatsapp</a></li>
         </ul>
       </nav>
       
@@ -40,43 +44,63 @@
   </div>
 <!-- Page 2 start -->
   <div id="page2">
-    <h1>MEET THE CHARACTERS <3 </h1>
+    <h1>MEET THE <b>MAIN</b> CHARACTERS <3 </h1>
       <div class="characters">
           <div class="character dora">
             <div class="img-head">
               <img src="./Images/DoraemonOfficial.webp" alt="Doraemon">
               <h2>Doraemon</h2>
             </div>
+            <!-- <div class="info">
+              <h1 class="title">Doraemon</h1>
+              <h2><b>Status-</b>Active</h2>
+              Doraemon is a fictional character in the Japanese manga and anime series of the same name created by Fujiko F. Fujio. Doraemon is a male robotic earless cat that travels back in time from the 22nd century to aid a preteen boy named Nobita.
+            </div> -->
           </div>
           <div class="character dora">
             <div class="img-head">
               <img src="./Images/NobitaOfficial.webp" alt="Doraemon">
               <h2>Nobita Nobi</h2>
             </div>
+            <!-- <div class="info">
+              Nobita Nobi is a fictional character in the Doraemon anime and manga series created by Fujiko Fujio, the pen name of writing team Hiroshi Fujimoto and Motoo Abiko. He is also the main character in The Doraemons (special version).
+            </div> -->
           </div>
           <div class="character dora">
             <div class="img-head">
               <img src="./Images/Shizuka.png" alt="Doraemon">
               <h2>Shizuka Minamoto</h2>
             </div>
+            <!-- <div class="info">
+              Shizuka Minamoto, nicknamed Shizuka-chan is a smart, kind and pretty girl. She is often represented by the colour pink, and is seen wearing a pink shirt and skirt. The word 'Shizuka' means 'Quiet'. She is Nobita's best friend and love-interest.
+            </div> -->
           </div>
           <div class="character dora">
             <div class="img-head">
               <img src="./Images/Sunios.png" alt="Doraemon">
-              <h2>Doraemon</h2>
+              <h2>Suneo Honekawa</h2>
             </div>
+            <!-- <div class="info">
+              sda
+            </div> -->
           </div>
           <div class="character dora">
             <div class="img-head">
               <img src="./Images/Gian.png" alt="Doraemon">
               <h2>Doraemon</h2>
             </div>
+            <!-- <div class="info">
+              sda
+            </div> -->
           </div>
-          <div class="character dora">
+          <div class="character dora" style="border-radius: 3rem;">
             <div class="img-head">
-              <img src="./Images/DoraemonOfficial.webp" alt="Doraemon">
-              <h2>Doraemon</h2>
+              <img src="./Images/image.png" alt="Doraemon">
+              <h2>Next Who ?</h2>
             </div>
+            <!-- <div class="info"> -->
+              <!-- sda -->
+            <!-- </div> -->
           </div>
         </div>
   </div>
@@ -85,7 +109,68 @@
     height: 100vh;
     /* background: #8a808061; */
   ">  
+      <h2 style="font-size: 2rem;">Doraemon With Pure Css</h2>
+    <div class="container">
+      <div class="doraemon">
+        <div class="head">
+          <div class="face">
+            <div class="eyes">
+              <div class="eye eye-left">
+                <div class="eyeball"></div>
+              </div>
+              <div class="eye eye-right">
+                <div class="eyeball"></div>
+              </div>
+            </div>
 
+            <div class="mouth">
+              <div class="mouth-top">
+                <div class="mouth-top-right-round">
+                  <div class="mouth-top-right-round-fixer"></div>
+                </div>
+              </div>
+              <div class="mouth-bottom">
+                <div class="mouth-bottom-ui">
+                  <div class="tongue-container">
+                    <div class="tongue"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="nose"></div>
+            <div class="mustache">
+              <div class="mustache-hair mustache-left-hair"></div>
+              <div class="mustache-hair mustache-left-hair"></div>
+              <div class="mustache-hair mustache-left-hair"></div>
+              <div class="mustache-hair mustache-right-hair"></div>
+              <div class="mustache-hair mustache-right-hair"></div>
+              <div class="mustache-hair mustache-right-hair"></div>
+            </div>
+          </div>
+        </div>
+        <div class="belt">
+          <div class="bell-ring">
+            <div class="bell-ring-strip"></div>
+            <div class="bell-ring-strip"></div>
+          </div>
+        </div>
+
+        <div class="body-part">
+          <div class="left-body-part">
+            <div class="leg left-leg"></div>
+          </div>
+          <div class="right-body-part">
+            <div class="leg right-leg"></div>
+          </div>
+          <div class="left-hand"></div>
+          <div class="right-hand"></div>
+          <div class="dress">
+            <div class="pocket"></div>
+          </div>
+          <div class="leg-gap"></div>
+        </div>
+      </div>
+    </div>
   </div>
   <script>
     function scrollToSection(sectionId) {
