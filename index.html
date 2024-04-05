@@ -1,185 +1,257 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="style.css"><link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <audio autoplay hidden loop>
+      <source src="Doraemon.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
 
-</head>
-<body>
-  <div class="home-page">
-    <!-- <input type="checkbox"  id="chk" > -->
-    <header>
-      <div class="logo">
-        DORA.com
-      </div>
-      <nav class="nav">
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#" onclick="scrollToSection('page2')"  >Characters</a></li>
-          <li><a href="#">FAQs</a></li>
-          <li><a href="https://wa.me/917701935880?text=Wow!+I+checked+your+webpage!"
-            style="display: flex;
-            align-items: center;"
-            onmouseover="this.style.color='#25D366'"
-            onmouseout="this.style.color=''"><i class='bx bxl-whatsapp'></i>Whatsapp</a></li>
-        </ul>
-      </nav>
-      
-        <i class='bx bx-menu-alt-right' id="menu"></i>
+    <div class="home-page">
+      <!-- <input type="checkbox"  id="chk" > -->
+      <header>
+        <div class="logo">DORA.com</div>
+        <nav class="nav">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li>
+              <a href="#page2">Characters</a>
+            </li>
+            <li><a href="#page3">Gallery</a></li>
+            <li><a href="#page4">Bonus :)</a></li>
+            <li>
+              <a
+                href="https://wa.me/917701935880?text=Wow!+I+checked+your+webpage!"
+                style="display: flex; align-items: center"
+                onmouseover="this.style.color='#25D366'"
+                onmouseout="this.style.color=''"
+                ><i class="bx bxl-whatsapp"></i>Whatsapp</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <i class="bx bx-menu-alt-right" id="menu"></i>
         <!-- <i class='bx bx-x' id="menu-close"></i> -->
-    </header>
-    <div class="content">
-      <div class="left-part">
-        <h1>Doraemon is here!</h1>
-        <button id="btn" onclick="scrollToSection('page2')"  >View More  <i class='bx bxs-down-arrow'></i></button>
-      </div>
-      <div class="right-part">
-        <div class="img-box">
-          <img src="./dora-img.jpg" alt="Doraemon Image">
+      </header>
+      <div class="content">
+        <div class="left-part">
+          <h1>Doraemon is here!</h1>
+          <button id="btn" onclick="scrollToSection('page2')">
+            View More <i class="bx bxs-down-arrow"></i>
+          </button>
+        </div>
+        <div class="right-part">
+          <div class="img-box">
+            <img src="./dora-img.jpg" alt="Doraemon Image" />
+          </div>
         </div>
       </div>
     </div>
-  </div>
-<!-- Page 2 start -->
-  <div id="page2">
-    <h1>MEET THE <b>MAIN</b> CHARACTERS <3 </h1>
+    <!-- Page 2 start -->
+    <div id="page2">
+      <h1>MEET THE <b>MAIN</b> CHARACTERS <3</h1>
       <div class="characters">
-          <div class="character dora">
-            <div class="img-head">
-              <img src="./Images/DoraemonOfficial.webp" alt="Doraemon">
-              <h2>Doraemon</h2>
-            </div>
-            <!-- <div class="info">
+        <div class="character dora">
+          <div class="img-head">
+            <img src="./Images/DoraemonOfficial.webp" alt="Doraemon" />
+            <h2>Doraemon</h2>
+          </div>
+          <!-- <div class="info">
               <h1 class="title">Doraemon</h1>
               <h2><b>Status-</b>Active</h2>
               Doraemon is a fictional character in the Japanese manga and anime series of the same name created by Fujiko F. Fujio. Doraemon is a male robotic earless cat that travels back in time from the 22nd century to aid a preteen boy named Nobita.
             </div> -->
+        </div>
+        <div class="character dora">
+          <div class="img-head">
+            <img src="./Images/NobitaOfficial.webp" alt="Doraemon" />
+            <h2>Nobita Nobi</h2>
           </div>
-          <div class="character dora">
-            <div class="img-head">
-              <img src="./Images/NobitaOfficial.webp" alt="Doraemon">
-              <h2>Nobita Nobi</h2>
-            </div>
-            <!-- <div class="info">
+          <!-- <div class="info">
               Nobita Nobi is a fictional character in the Doraemon anime and manga series created by Fujiko Fujio, the pen name of writing team Hiroshi Fujimoto and Motoo Abiko. He is also the main character in The Doraemons (special version).
             </div> -->
+        </div>
+        <div class="character dora">
+          <div class="img-head">
+            <img src="./Images/Shizuka.png" alt="Doraemon" />
+            <h2>Shizuka Minamoto</h2>
           </div>
-          <div class="character dora">
-            <div class="img-head">
-              <img src="./Images/Shizuka.png" alt="Doraemon">
-              <h2>Shizuka Minamoto</h2>
-            </div>
-            <!-- <div class="info">
+          <!-- <div class="info">
               Shizuka Minamoto, nicknamed Shizuka-chan is a smart, kind and pretty girl. She is often represented by the colour pink, and is seen wearing a pink shirt and skirt. The word 'Shizuka' means 'Quiet'. She is Nobita's best friend and love-interest.
             </div> -->
+        </div>
+        <div class="character dora">
+          <div class="img-head">
+            <img src="./Images/Sunios.png" alt="Doraemon" />
+            <h2>Suneo Honekawa</h2>
           </div>
-          <div class="character dora">
-            <div class="img-head">
-              <img src="./Images/Sunios.png" alt="Doraemon">
-              <h2>Suneo Honekawa</h2>
-            </div>
-            <!-- <div class="info">
+          <!-- <div class="info">
               sda
             </div> -->
+        </div>
+        <div class="character dora">
+          <div class="img-head">
+            <img src="./Images/Gian.png" alt="Doraemon" />
+            <h2>Doraemon</h2>
           </div>
-          <div class="character dora">
-            <div class="img-head">
-              <img src="./Images/Gian.png" alt="Doraemon">
-              <h2>Doraemon</h2>
-            </div>
-            <!-- <div class="info">
-              sda
+          <!-- <div class="info">
+              
             </div> -->
-          </div>
-          <div class="character dora" style="border-radius: 3rem;">
-            <div class="img-head">
-              <img src="./Images/image.png" alt="Doraemon">
-              <h2>Next Who ?</h2>
-            </div>
-            <!-- <div class="info"> -->
-              <!-- sda -->
-            <!-- </div> -->
-          </div>
         </div>
-  </div>
-  <!-- Page 3 Start -->
-  <div id="page3" style="
-    height: 100vh;
-    /* background: #8a808061; */
-  ">  
-      <h2 style="font-size: 2rem;">Doraemon With Pure Css</h2>
-    <div class="container">
-      <div class="doraemon">
-        <div class="head">
-          <div class="face">
-            <div class="eyes">
-              <div class="eye eye-left">
-                <div class="eyeball"></div>
-              </div>
-              <div class="eye eye-right">
-                <div class="eyeball"></div>
-              </div>
-            </div>
-
-            <div class="mouth">
-              <div class="mouth-top">
-                <div class="mouth-top-right-round">
-                  <div class="mouth-top-right-round-fixer"></div>
-                </div>
-              </div>
-              <div class="mouth-bottom">
-                <div class="mouth-bottom-ui">
-                  <div class="tongue-container">
-                    <div class="tongue"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="nose"></div>
-            <div class="mustache">
-              <div class="mustache-hair mustache-left-hair"></div>
-              <div class="mustache-hair mustache-left-hair"></div>
-              <div class="mustache-hair mustache-left-hair"></div>
-              <div class="mustache-hair mustache-right-hair"></div>
-              <div class="mustache-hair mustache-right-hair"></div>
-              <div class="mustache-hair mustache-right-hair"></div>
-            </div>
+        <div class="character dora" style="border-radius: 3rem">
+          <div class="img-head">
+            <img src="./Images/image.png" alt="Doraemon" />
+            <h2>Next Who ?</h2>
           </div>
-        </div>
-        <div class="belt">
-          <div class="bell-ring">
-            <div class="bell-ring-strip"></div>
-            <div class="bell-ring-strip"></div>
-          </div>
-        </div>
-
-        <div class="body-part">
-          <div class="left-body-part">
-            <div class="leg left-leg"></div>
-          </div>
-          <div class="right-body-part">
-            <div class="leg right-leg"></div>
-          </div>
-          <div class="left-hand"></div>
-          <div class="right-hand"></div>
-          <div class="dress">
-            <div class="pocket"></div>
-          </div>
-          <div class="leg-gap"></div>
+          <!-- <div class="info"> -->
+          <!-- sda -->
+          <!-- </div> -->
         </div>
       </div>
     </div>
-  </div>
-  <script>
-    function scrollToSection(sectionId) {
-  var section = document.getElementById(sectionId);
-  if (section) {
-    section.scrollIntoView({ behavior: 'smooth' });
-  }
-}
+    <!-- Page 3 Starts -->
+    <section class="page3" id="page3">
+      <h1>Image Gallery</h1>
+      <p>(click to download)</p>
+      <div class="image-grid">
+        <div class="gallery-box">
+          <a href="./img/img1.webp" download="image1.jpg">
+            <img src="./img/img1.webp" alt="" />
+          </a>
+        </div>
+        <div class="gallery-box">
+          <a href="./img/img2.jpg" download="image2.webp">
+            <img src="./img/img2.jpg" alt="" />
+          </a>
+        </div>
+        <div class="gallery-box">
+          <a href="./img/img3.jpg" download="image3.jpg">
+            <img src="./img/img3.jpg" alt="" />
+          </a>
+        </div>
+        <div class="gallery-box">
+          <a href="./img/img4.webp" download="image4.jpg">
+            <img src="./img/img4.webp" alt="" />
+          </a>
+        </div>
+        <div class="gallery-box">
+          <a href="./img/img5.jpg" download="image5.jpg">
+            <img src="./img/img5.jpg" alt="" />
+          </a>
+        </div>
+        <div class="gallery-box">
+          <a href="./img/img6.jpg" download="image6.jpg">
+            <img src="./img/img6.jpg" alt="" />
+          </a>
+        </div>
+        <div class="gallery-box">
+          <a href="./img/img7.webp" download="image7.webp">
+            <img src="./img/img7.webp" alt="" />
+          </a>
+        </div>
+        <div class="gallery-box">
+          <a href="./img/img8.jpg" download="image8.jpeg">
+            <img src="./img/img8.jpg" alt="" />
+          </a>
+        </div>
+        <div class="gallery-box">
+          <a href="./img/img9.webp" download="image8.jpeg">
+            <img src="./img/img9.webp" alt="" />
+          </a>
+        </div>
+        <div class="gallery-box">
+          <a href="./img/img10.jpg" download="image8.jpeg">
+            <img src="./img/img10.jpg" alt="" />
+          </a>
+        </div>
+        <div class="gallery-box">
+          <a href="./img/img11.avif" download="image8.jpeg">
+            <img src="./img/img11.avif" alt="" />
+          </a>
+        </div>
+        <div class="gallery-box">
+          <a href="./img/img12.jpg" download="image8.jpeg">
+            <img src="./img/img12.jpg " alt="" />
+          </a>
+        </div>
+      </div>
+    </section>  
+    <!-- Page 3 Ends -->
 
-  </script>
-</body>
+    <!-- Page 4 Start -->
+    <div id="page4" style="height: 100vh; /* background: #8a808061; */">
+      <h2 style="font-size: 2rem">Doraemon With Pure Css</h2>
+      <div class="container">
+        <div class="doraemon">
+          <div class="head">
+            <div class="face">
+              <div class="eyes">
+                <div class="eye eye-left">
+                  <div class="eyeball"></div>
+                </div>
+                <div class="eye eye-right">
+                  <div class="eyeball"></div>
+                </div>
+              </div>
+
+              <div class="mouth">
+                <div class="mouth-top">
+                  <div class="mouth-top-right-round">
+                    <div class="mouth-top-right-round-fixer"></div>
+                  </div>
+                </div>
+                <div class="mouth-bottom">
+                  <div class="mouth-bottom-ui">
+                    <div class="tongue-container">
+                      <div class="tongue"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="nose"></div>
+              <div class="mustache">
+                <div class="mustache-hair mustache-left-hair"></div>
+                <div class="mustache-hair mustache-left-hair"></div>
+                <div class="mustache-hair mustache-left-hair"></div>
+                <div class="mustache-hair mustache-right-hair"></div>
+                <div class="mustache-hair mustache-right-hair"></div>
+                <div class="mustache-hair mustache-right-hair"></div>
+              </div>
+            </div>
+          </div>
+          <div class="belt">
+            <div class="bell-ring">
+              <div class="bell-ring-strip"></div>
+              <div class="bell-ring-strip"></div>
+            </div>
+          </div>
+
+          <div class="body-part">
+            <div class="left-body-part">
+              <div class="leg left-leg"></div>
+            </div>
+            <div class="right-body-part">
+              <div class="leg right-leg"></div>
+            </div>
+            <div class="left-hand"></div>
+            <div class="right-hand"></div>
+            <div class="dress">
+              <div class="pocket"></div>
+            </div>
+            <div class="leg-gap"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
